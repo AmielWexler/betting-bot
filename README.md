@@ -285,8 +285,6 @@ betting-bot/
 │   ├── docker-compose.yml              # 🐳 Docker services orchestration (PostgreSQL + App)
 │   ├── Dockerfile                      # 📋 Container build instructions
 │   ├── start_api.py                    # 🚀 FastAPI server startup script
-│   ├── CLAUDE.md                       # 📝 AI assistant project instructions
-│   └── README_BETTING_SYSTEM.md        # 📚 Additional system documentation
 │
 ├── 🌐 API Layer (FastAPI Backend)
 │   └── api/
@@ -884,5 +882,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: Use GitHub Discussions for questions and ideas
 
 ---
-
-**Made with ⚽ and 🤖 by the AI Betting Assistant Team**
