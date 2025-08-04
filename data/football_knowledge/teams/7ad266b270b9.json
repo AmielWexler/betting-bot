@@ -1,0 +1,12 @@
+{
+  "content": "Liverpool Football Club is an English professional football club based in Liverpool. \n                Founded in 1892, Liverpool has won 19 league titles, 8 FA Cups, 9 League Cups, 15 FA Community Shields, \n                6 European Cups/Champions League titles, 3 UEFA Cups/Europa League titles, 4 UEFA Super Cups, and 1 FIFA Club World Cup.\n                \n                Recent Performance:\n                - Premier League Champions 2019-20\n                - Champions League Winners 2018-19\n                - Key Players: Mohamed Salah, Virgil van Dijk, Sadio Mané\n                - Manager: Jürgen Klopp (known for high-intensity pressing style)\n                - Home Stadium: Anfield (capacity: 53,394)\n                \n                Playing Style: Known for gegenpressing, fast transitions, and attacking full-backs.\n                Strengths: Strong mentality, excellent in big games, solid defense with van Dijk.\n                Weaknesses: Can struggle against deep defensive blocks, injury-prone squad depth.",
+  "metadata": {
+    "id": "7ad266b270b9",
+    "title": "Liverpool FC Profile",
+    "category": "teams",
+    "source": "sample_data",
+    "created_at": "2025-08-04T10:30:54.973824",
+    "updated_at": "2025-08-04T10:30:54.973832",
+    "content_hash": "3120e559ec330490adef158c1386f901"
+  }
+}

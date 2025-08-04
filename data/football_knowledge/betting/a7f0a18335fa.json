@@ -1,0 +1,12 @@
+{
+  "content": "Value betting is the practice of betting when the probability of an outcome is greater \n                than the probability implied by the bookmaker's odds.\n                \n                Key Principles:\n                1. Calculate true probability of outcomes\n                2. Compare with bookmaker's implied probability\n                3. Bet when you find positive expected value\n                4. Use proper bankroll management\n                \n                Example: If you calculate Liverpool has 60% chance to win, but odds imply 50% (2.00 odds), \n                this represents value.\n                \n                Risk Management:\n                - Never bet more than 2-5% of bankroll on single bet\n                - Track all bets and results\n                - Focus on long-term profitability\n                - Avoid emotional betting",
+  "metadata": {
+    "id": "a7f0a18335fa",
+    "title": "Value Betting Strategy",
+    "category": "betting",
+    "source": "sample_data",
+    "created_at": "2025-08-04T10:30:54.974557",
+    "updated_at": "2025-08-04T10:30:54.974561",
+    "content_hash": "23c9d6d1e1e5a2602244cfbd4bb36c2a"
+  }
+}

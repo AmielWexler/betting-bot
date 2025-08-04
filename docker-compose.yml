@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: betting_bot_db
+    environment:
+      POSTGRES_DB: betting_bot
+      POSTGRES_USER: betting_user
+      POSTGRES_PASSWORD: betting_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+    networks:
+      - betting_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U betting_user -d betting_bot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  streamlit:
+    build: .
+    container_name: betting_bot_app
+    ports:
+      - "8501:8501"
+    environment:
+      DATABASE_URL: postgresql+asyncpg://betting_user:betting_password@postgres:5432/betting_bot
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: betting_bot
+      POSTGRES_USER: betting_user
+      POSTGRES_PASSWORD: betting_password
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY}
+    volumes:
+      - .:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - betting_network
+    command: streamlit run app.py --server.address 0.0.0.0
+
+volumes:
+  postgres_data:
+
+networks:
+  betting_network:
+    driver: bridge
